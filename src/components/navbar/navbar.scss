@@ -1,0 +1,31 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    span {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    img {
+        cursor: pointer;
+    }
+    
+    //  same as doing navbar navbar-logo { }
+
+    .navbar-logo {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        cursor: pointer;
+    }
+
+    .nav-ham {
+        width: 27px;
+        height: 18px;
+    }
+
+
+
+}
