@@ -1,17 +1,28 @@
 .container {
     display: flex;
     flex-direction: column;
-    padding: 16px;
-    gap: 2.5rem;
+    gap: 2rem;
+
+    img {
+        object-fit: cover;
+    }
 
     .span--bold {
         font-weight: 900;
+    }
+
+    .span--s-bold {
+        font-weight: 600;
     }
 
     .span--transparent {
         color: #FFF;
         font-weight: 900;
         text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+
+    header, div {
+        padding: 16px;
     }
 
 }
