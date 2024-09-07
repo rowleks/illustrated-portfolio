@@ -1,0 +1,19 @@
+.socials {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+
+    span {
+        border: 2px solid #000;
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 5px;
+
+    }
+
+
+}
