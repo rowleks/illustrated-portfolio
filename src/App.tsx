@@ -1,6 +1,7 @@
 import './App.scss';
 import About from './components/about/About';
 import Experience from './components/experience/Experience';
+import Footer from './components/footer/Footer';
 import Contact from './components/form/Contact';
 import Hero from './components/hero/Hero';
 import Navbar from './components/navbar/Navbar';
@@ -26,6 +27,10 @@ function App() {
         <Projects />
         <Contact />
       </main>
+
+      <footer>
+        <Footer />
+      </footer>
       
       
     </div>
