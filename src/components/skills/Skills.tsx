@@ -45,6 +45,7 @@ return (
                 <img src="/postgre-icon.svg" alt="" />
                 <span>PostgreSQL</span>
             </div>
+    
         </div>
     
     </section>
