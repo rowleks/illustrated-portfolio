@@ -4,7 +4,7 @@ import Socials from "../socials/Socials";
 
 function Hero() {
 return (
-    <section className="hero">
+    <section id="heros" className="hero">
         <img className="hero__img" src="/hero-illstr-mb.png" alt="hero-img" />
 
         <div className="hero-left">

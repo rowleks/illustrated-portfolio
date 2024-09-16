@@ -1,10 +1,30 @@
 @import "../../styles/media-queries.scss";
 
-
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;  // Make sure it's fixed to the top of the viewport
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 16px;
+    background-color: #fff;
+    z-index: 1000;  // Make sure it's above other content
+    transition: transform 0.3s ease-in-out;  // Add transition for smooth hide/show
+
+    @include sm {
+        padding-inline: 80px;
+    }
+
+
+    &.hidden {
+        transform: translateY(-100%);  // Hide navbar when scrolling down
+    }
+
+    &.active {
+        transform: translateY(0);  // Show navbar when scrolling up
+    }
 
     .nav-links {
         font-weight: 400;
@@ -23,11 +43,9 @@
             gap: 1rem;
             align-items: center;
         }
-        
     }
 
     .resume-btn {
-        
         display: none;
 
         @include sm {
@@ -41,12 +59,9 @@
         }
     }
 
-
     img {
         cursor: pointer;
     }
-    
-    //  same as doing navbar navbar-logo { }
 
     .navbar-logo {
         display: flex;
@@ -68,7 +83,6 @@
             display: none;
         }
     }
-
 
     .ham-menu {
         position: fixed;
@@ -97,7 +111,4 @@
             pointer-events: auto;  // Enable interaction
         }
     }
-
-
-
 }
