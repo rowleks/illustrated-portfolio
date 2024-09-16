@@ -8,6 +8,7 @@ function Navbar() {
   const [lastScrollY, setLastScrollY] = useState(0);
 
   const toggleNav = () => setOpen(!open);
+  const closeNav = () => setOpen(false)
 
   const controlNavbar = useCallback(() => {
     if (window.scrollY > lastScrollY) {
@@ -35,16 +36,16 @@ function Navbar() {
       </div> </AnchorLink>
 
       <div className="nav-menu">
-        <AnchorLink href="#about">
+        <AnchorLink onClick={closeNav} href="#about">
           <span className="nav-links">About Me</span>
         </AnchorLink>
-        <AnchorLink href="#skills">
+        <AnchorLink onClick={closeNav} href="#skills">
           <span className="nav-links">Skills</span>
         </AnchorLink>
-        <AnchorLink href="#projects">
+        <AnchorLink onClick={closeNav} href="#projects">
           <span className="nav-links">Project</span>
         </AnchorLink>
-        <AnchorLink href="#contact">
+        <AnchorLink onClick={closeNav} href="#contact">
           <span className="nav-links">Contact Me</span>
         </AnchorLink>
       </div>
@@ -57,16 +58,16 @@ function Navbar() {
       <img onClick={toggleNav} className="nav-ham" src="hamburger.png" alt="hamburger" />
 
       <div className={`ham-menu ${open ? "open" : ""}`}>
-        <AnchorLink href="#about">
+        <AnchorLink onClick={closeNav} href="#about">
           <span className="nav-links">About Me</span>
         </AnchorLink>
-        <AnchorLink href="#skills">
+        <AnchorLink onClick={closeNav} href="#skills">
           <span className="nav-links">Skills</span>
         </AnchorLink>
-        <AnchorLink href="#projects">
+        <AnchorLink onClick={closeNav} href="#projects">
           <span className="nav-links">Project</span>
         </AnchorLink>
-        <AnchorLink href="#contact">
+        <AnchorLink onClick={closeNav} href="#contact">
           <span className="nav-links">Contact Me</span>
         </AnchorLink>
       </div>
