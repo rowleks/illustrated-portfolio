@@ -1,7 +1,16 @@
+@import "./styles/media-queries.scss";
+
+
 .container {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+
+    @include sm {
+        section {
+        margin-block: 1.5rem;
+        }
+    }
 
     img {
         object-fit: cover;
@@ -23,6 +32,10 @@
 
     header, .div--padding {
         padding: 16px;
+
+        @include sm {
+            padding-inline: 80px;
+        }
     }
 
 }
