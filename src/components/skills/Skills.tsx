@@ -2,7 +2,7 @@ import "./skills.scss";
 
 function Skills() {
 return (
-    <section className="skills">
+    <section id="skills" className="skills">
 
         <h2>My <span className="span--bold">Skills</span></h2>
 

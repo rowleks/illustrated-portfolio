@@ -2,7 +2,7 @@ import "./projects.scss";
 
 export default function Projects() {
 return (
-    <section className="projects">
+    <section id="projects" className="projects">
         <h2>My <span className="span--bold">Projects</span></h2>
         <div className="project__container">
             <img src="/project11.png" alt="" />

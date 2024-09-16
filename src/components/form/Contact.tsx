@@ -3,7 +3,7 @@ import "./contact.scss";
 
 export default function Contact() {
 return (
-    <section className="contact">
+    <section id="contact" className="contact">
         <form onSubmit={(e)=> e.preventDefault()}>
             <input type="text" placeholder="Your name" />
             <input type="email" placeholder="Email" />
