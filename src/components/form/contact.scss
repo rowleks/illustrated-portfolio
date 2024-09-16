@@ -1,14 +1,33 @@
+@import "../../styles/media-queries.scss";
+
 .contact {
     display: flex;
     flex-direction: column;
     padding: 40px 16px;
     gap: 1rem;
 
+    @include sm {
+        flex-direction: row;
+        gap: 5rem;
+        align-items: center;
+    }
+
     form {
         display: flex;
         flex-direction: column;
         gap: 1rem;
         margin-block: .5rem;
+        flex: 1;
+
+        .btns {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            @include sm {
+                flex-direction: row;
+            }
+        }
 
         input, textarea {
             padding: 1rem;
@@ -45,6 +64,7 @@
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
+        flex: 1.2;
 
         h3 {
             font-size: 28px;
